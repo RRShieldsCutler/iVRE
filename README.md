@@ -1,5 +1,5 @@
 ## Enterococcal secondary metabolome analysis
-***
+
 ##### Repository associated with the biosynthetic gene cluster analysis of Enterococcal species associated with HCT patients.
 
 #### License
