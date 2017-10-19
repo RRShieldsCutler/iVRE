@@ -1,6 +1,6 @@
 ## Enterococcal secondary metabolome analysis
 ***
-#### Repository associated with the biosynthetic gene cluster analysis of Enterococcal species associated with HCT patients.
+##### Repository associated with the biosynthetic gene cluster analysis of Enterococcal species associated with HCT patients.
 
 #### License
     Copyright (C) 2017, Robin Shields-Cutler
@@ -16,7 +16,7 @@
     GNU Affero General Public License for more details.
 
 
-#### Methods relevant to this repo
+#### Methods relevant to the analysis
 These analyses were carried out, and have only been tested, on Mac OSX 10.11.6, except where noted below.
 
 Genome files were downloaded via FTP from the NCBI Reference Sequence Database. For information on which strains, see the strain mapping data file in this repo, which contains the RefSeq ID and annotated strain name for each assembly (i.e. not all are "complete" level genomes). Strain names and mappings to NCBI Refseq identifiers are provided in the data directory in this repo.
