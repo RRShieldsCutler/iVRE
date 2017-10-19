@@ -28,11 +28,11 @@ run_antismash.py
                 [genome_fna]
                 --outputfolder [results_dir]
                 --inclusive --clusterblast --asf --disable-BioSQL
-		 --disable-svg --disable-embl --disable-write_metabolicmodel
+		--disable-svg --disable-embl --disable-write_metabolicmodel
                 --disable-xls --disable-html --disable-BiosynML
 ```
 
-The extracted amino acid coding sequences were concatenated and compared "all-vs-all" using the command line tool for BLAST in [Anaconda](https://anaconda.org/bioconda/blast). We generated a custom blast protein database from the amino acid sequences and queried the database with the same set of sequences (e-value cutoff of 7x10<sup>-10</sup>). [Custom C software](https://github.com/RRShieldsCutler/iVRE/tree/master/lib/), was used to evaluate the identity and compositional similarity between every two BGCs, generating an all-vs-all square matrix, where each row/column is a single BGC and the matrix value represents the identity score scaled by the amount of homologous gene overlap. Therefore, a perfect self-self match scores 100, while very dissimilar pathways would score 0.
+The extracted amino acid coding sequences were concatenated and compared "all-vs-all" using the command line tool for BLAST in [Anaconda](https://anaconda.org/bioconda/blast). We generated a custom blast protein database from the amino acid sequences and queried the database with the same set of sequences (e-value cutoff of 7x10<sup>-10</sup>). [Custom C software](https://github.com/RRShieldsCutler/iVRE/tree/master/lib/) was used to evaluate the identity and compositional similarity between every two BGCs, generating an all-vs-all square matrix, where each row/column is a single BGC and the matrix value represents the identity score scaled by the amount of homologous gene overlap. Therefore, a perfect self-self match scores 100, while very dissimilar pathways would score 0.
 
 From here, the matrix was converted to long format in R, then de-replicated, fully annotated using the above strain map, and filtered at a specific similarity threshold in a custom Python script, [here](https://github.com/RRShieldsCutler/iVRE/blob/master/lib/annotate_arrange_network.py). The resulting table was used to generate the networks in [Cytoscape v3.4.0](http://www.cytoscape.org/).
 ______________
