@@ -3,10 +3,10 @@
 ##### Repository associated with the biosynthetic gene cluster analysis of Enterococcal species associated with HCT patients.
 
 #### License
-    Copyright (C) 2017, Robin Shields-Cutler
+    Copyright (C) 2017, Robin Shields-Cutler and Gabe Al-Ghalith
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as
+    These programs are free software: you can redistribute them and/or modify
+    them under the terms of the GNU General Public License as
     published by the Free Software Foundation, either version 3 of the
     License, or (at your option) any later version.
 
